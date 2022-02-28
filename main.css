@@ -1,0 +1,340 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: FS me;
+}
+
+@font-face {
+  font-family: FS me;
+  src: url(font/FSMe-Regular.ttf);
+}
+
+p {
+  font-size: 15px;
+}
+
+/* Number Color */
+
+.negative {
+  color: #8cc8e0;
+}
+
+.positive {
+  color: #d23070;
+}
+
+.title {
+  font-size: 34px;
+  line-height: 1.2em;
+  color: #842080;
+  font-weight: 300;
+}
+
+.subTitle {
+  font-size: 22px;
+  margin: 15px 0px;
+}
+
+.parentDiv {
+  min-height: 100vh;
+  display: flex;
+  align-items: stretch;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.div6123 {
+  flex: 6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.div6 {
+  flex: 1;
+  padding: 30px;
+}
+
+.div123 {
+  flex: 5;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.div1 {
+  flex: 1;
+  padding: 30px;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 15px;
+}
+
+.box1,
+.box2,
+.box3 {
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  margin-right: 15px;
+}
+
+.box1 {
+  background-color: #17358a;
+}
+
+.box2 {
+  background-color: #8cc8e0;
+}
+
+.box3 {
+  background-color: #d23070;
+}
+
+.div23 {
+  flex: 3;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.div45 {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.logo {
+  padding: 15px;
+}
+
+.mainLogo {
+  width: 100%;
+}
+
+.copyright {
+  padding: 15px;
+}
+
+.copyright p {
+  font-size: 14px;
+}
+
+.div2 {
+  flex: 1;
+}
+
+.div3 {
+  flex: 1;
+  padding: 15px;
+  position: relative;
+}
+
+.infoBox {
+  width: 400px;
+  padding: 30px;
+  background-color: white;
+  box-shadow: 3px 3px 20px -5px rgba(0, 0, 0, 0.127);
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform-origin: center;
+  transform: scale(0);
+}
+
+.closeBtn {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  width: 35px;
+  display: none;
+}
+
+.informations {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #17358a;
+  padding: 5px;
+}
+
+.informations h3 {
+  font-size: 34px;
+  line-height: 1.2em;
+  font-weight: 300;
+}
+
+.infoName {
+  flex: 2;
+  text-align: right;
+  padding: 10px;
+}
+
+.infoDigit {
+  flex: 1;
+  text-align: right;
+}
+
+/* Use JS to inject this */
+
+.activeInfoBox {
+  transform: scale(1);
+}
+
+.inActiveMapFill {
+  fill: #97999b !important;
+}
+
+/* Ends */
+
+@media (min-width: 1024px) and (max-width: 1400px) {
+  .parentDiv {
+    flex-direction: column;
+  }
+
+  .infoBox {
+    width: 350px;
+  }
+
+  .informations h3 {
+    font-size: 26px;
+  }
+
+  .div45 {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 769px) {
+  .subTitle {
+    width: 50%;
+  }
+}
+
+@media (min-width: 760px) and (max-width: 768px) {
+  .parentDiv {
+    flex-direction: column;
+  }
+
+  .div123 {
+    flex-direction: column;
+  }
+
+  .div3 {
+    position: relative;
+  }
+
+  .div6 {
+    padding: 0px 30px;
+  }
+
+  .div45 {
+    flex-direction: row;
+  }
+
+  .infoBox {
+    position: absolute;
+    top: 0%;
+    left: -50%;
+    width: 450px;
+  }
+
+  .closeBtn {
+    display: block;
+    width: 30px;
+  }
+
+  .informations h3 {
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .parentDiv {
+    flex-direction: column;
+  }
+
+  .title {
+    font-size: 25px;
+    color: #842080;
+    font-weight: 300;
+  }
+
+  .informations h3 {
+    font-size: 20px;
+  }
+
+  .subTitle {
+    font-size: 15px;
+  }
+
+  .div6 {
+    padding: 20px;
+  }
+
+  .div1 {
+    padding: 20px;
+  }
+
+  .div45 {
+    flex-direction: row;
+  }
+
+  .div123 {
+    flex-direction: column;
+  }
+
+  .div3 {
+    position: absolute;
+  }
+
+  .infoBox {
+    left: 30%;
+    width: 300px;
+    padding: 20px;
+  }
+
+  .informations {
+    padding: 0px;
+  }
+
+  .infoName {
+    padding: 10px 0px;
+  }
+
+  .infoName p {
+    font-size: 13px;
+  }
+
+  .closeBtn {
+    display: block;
+    width: 25px;
+  }
+
+  /* Footer */
+
+  .logo,
+  .copyright {
+    padding: 2%;
+  }
+
+  .copyright p {
+    text-align: right;
+  }
+
+  .mainLogo {
+    width: 120px;
+  }
+}
